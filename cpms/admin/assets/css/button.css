@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* common styles !!!YOU DON'T NEED THEM */
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 18px;
+  padding: 20px 0px;
+  width: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* effect-2 styles */
+.effect.effect-2 {
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-2:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0px 6px 6px 0px;
+  transition: all 0.2s linear 0s;
+  text-align: center;
+}
+.effect.effect-2:hover {
+  text-indent: -30px;
+}
+.effect.effect-2:hover:before {
+  right: 0;
+  text-indent: 0px;
+}

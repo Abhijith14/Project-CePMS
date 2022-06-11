@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    @charset "UTF-8";
+/* common styles !!!YOU DON'T NEED THEM */
+body {
+  background-color: #F1E9DA;
+}
+body .container {
+  width: 850px;
+  margin: 70px auto 0px auto;
+  text-align: center;
+}
+body .container h1 {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+body .container h1 span {
+  font-weight: 700;
+  font-style: italic;
+  color: #D90368;
+  border-bottom: 2px dashed currentColor;
+}
+body .container .button-effect {
+  padding: 30px 0px;
+}
+body .container .button-effect h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+body .container .button-effect a {
+  margin-right: 17px;
+}
+body .container .button-effect a:nth-child(2) {
+  background-color: #541388;
+}
+body .container .button-effect a:nth-child(3) {
+  background-color: #D90368;
+}
+body .container .button-effect a:nth-child(4) {
+  background-color: #104547;
+}
+body .container .button-effect a:nth-child(5) {
+  background-color: #4F000B;
+}
+body .container .button-effect a:nth-child(6) {
+  background-color: #F28123;
+}
+body .container .button-effect a:last-child {
+  margin-right: 0px;
+}
+
+/* button styles !!!YOU NEED THEM 
+!!!ALSO YOU NEED TO ADD FONTWESOME */
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 18px;
+  padding: 20px 0px;
+  width: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* effect-1 styles */
+.effect.effect-1 {
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-1:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-1:hover {
+  text-indent: -20px;
+}
+.effect.effect-1:hover:before {
+  opacity: 1;
+  text-indent: 0px;
+}
+
+/* effect-2 styles */
+.effect.effect-2 {
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-2:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0px 6px 6px 0px;
+  transition: all 0.2s linear 0s;
+  text-align: center;
+}
+.effect.effect-2:hover {
+  text-indent: -30px;
+}
+.effect.effect-2:hover:before {
+  right: 0;
+  text-indent: 0px;
+}
+
+/* effect-3 styles */
+.effect.effect-3 {
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-3:before {
+  content: "";
+  font-family: FontAwesome;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-3:hover {
+  text-indent: -9999px;
+}
+.effect.effect-3:hover:before {
+  top: 0;
+  text-indent: 0;
+}
+
+/* effect-4 styles */
+.effect.effect-4 {
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-4:before {
+  content: "";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  transform: scale(0, 1);
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-4:hover {
+  text-indent: -9999px;
+}
+.effect.effect-4:hover:before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+
+/* effect-5 styles */
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:before {
+  content: "";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 50% 50% 0;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:hover {
+  text-indent: 30px;
+}
+.effect.effect-5:hover:before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>CSS3 Button <span>Hover</span> Effects</h1>
+  
+  <div class="button-effect">
+    <h2>Effect #1</h2>
+    <a class="effect effect-1" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-1" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-1" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-1" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-1" href="#" title="Learn More">Learn More</a>
+  </div>
+  
+  <div class="button-effect">
+    <h2>Effect #2</h2>
+    <a class="effect effect-2" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-2" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-2" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-2" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-2" href="#" title="Learn More">Learn More</a>
+  </div>
+  
+  <div class="button-effect">
+    <h2>Effect #3</h2>
+    <a class="effect effect-3" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-3" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-3" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-3" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-3" href="#" title="Learn More">Learn More</a>
+  </div>
+  
+   <div class="button-effect">
+    <h2>Effect #4</h2>
+    <a class="effect effect-4" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-4" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-4" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-4" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-4" href="#" title="Learn More">Learn More</a>
+  </div>
+  
+   <div class="button-effect">
+    <h2>Effect #5</h2>
+    <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+    <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+  </div>
+  
+</div>
+</body>
+</html>
