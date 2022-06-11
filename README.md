@@ -13,8 +13,8 @@
 <a href="https://github.com/Abhijith14/Project-CePMS" target="_blank">
     <img src="https://img.shields.io/badge/version-v2.0-blue?style=for-the-badge&logo=none" alt="cepms version" />
 </a>&nbsp;
-<a href="https://www.python.org/" target="_blank">
-    <img src="https://img.shields.io/badge/PYTHON-3.6+-00ADD8?style=for-the-badge&logo=python" alt="python version" />
+<a href="https://www.php.net" target="_blank">
+    <img src="https://img.shields.io/badge/PHP-8.1.0+-00ADD8?style=for-the-badge&logo=php" alt="python version" />
 </a>&nbsp;
 <a href="https://github.com/Abhijith14/Project-CePMS" target="_blank">
     <img src="https://img.shields.io/badge/Project Type-Website-success?style=for-the-badge&logo=none" alt="project type" />
@@ -26,7 +26,7 @@
 
 ## ⚡️ Quick start
 
-First of all, download and install [XAMPP Control Panel](https://www.apachefriends.org). Copy the repo contents to xampp/htdocs/CePMS and start Apache and MySQL server (refer php + xampp docs). Navigate to `localhost/phpmyadmin` in a browser. This will access PhpMyAdmin page. Create a new database, give the name as cpms. Then import the sql file inside the folder [SQL File](SQL%20FILE).
+First of all, download and install [XAMPP Control Panel](https://www.apachefriends.org). Copy the repo contents to xampp/htdocs/CePMS and start Apache and MySQL server (refer php + xampp docs). Navigate to `localhost/phpmyadmin` in a browser. This will access PhpMyAdmin page. Create a new database, give the name as cpms. Then import the sql file inside the folder [SQL File](https://github.com/Abhijith14/Project-CePMS/tree/master/SQL%20File).
 
 Now, navigate to:
 
